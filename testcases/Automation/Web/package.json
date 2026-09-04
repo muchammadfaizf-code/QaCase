@@ -1,0 +1,22 @@
+{
+  "name": "selenium-skola",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/specs/**/*.spec.js --timeout 60000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "mochawesome": "^7.1.4",
+    "pixelmatch": "^7.2.0",
+    "pngjs": "^7.0.0",
+    "selenium-webdriver": "^4.45.0"
+  },
+  "devDependencies": {
+    "canvas": "^3.2.3"
+  }
+}
