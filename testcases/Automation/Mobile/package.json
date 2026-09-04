@@ -1,0 +1,29 @@
+{
+  "name": "mobile-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./run-tests.js",
+    "wdio": "wdio run ./wdio.conf.js",
+    "allure:clean": "rm -rf reports/allure-results reports/allure-report",
+    "allure:generate": "npx allure generate reports/allure-results -o reports/allure-report --clean",
+    "allure:open": "npx allure serve reports/allure-results",
+    "allure": "npm run allure:clean && npm run wdio && npm run allure:generate && npm run allure:open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^9.29.0"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^9.29.1",
+    "@wdio/appium-service": "^9.29.0",
+    "@wdio/local-runner": "^9.29.0",
+    "@wdio/mocha-framework": "^9.29.0",
+    "@wdio/spec-reporter": "^9.29.0",
+    "allure-commandline": "^2.43.0",
+    "appium-uiautomator2-driver": "^7.6.2"
+  }
+}

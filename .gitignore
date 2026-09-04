@@ -1,4 +1,11 @@
 # Dependencies
 node_modules/
 testcases/Automation/Web/node_modules/
+testcases/Automation/Mobile/node_modules/
+.DS_Store
+*.log
+testcases/Automation/Mobile/tmp/
 
+testcases/Automation/Mobile/reports/
+testcases/Automation/Mobile/allure-results/
+testcases/Automation/Mobile/allure-report/
